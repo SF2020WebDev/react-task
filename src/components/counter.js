@@ -1,10 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 const Counter = () => {
     const [count, setCount] = useState(0);
-    useEffect(()=>{
-        document.title = 'Counter:' + count;
-    });
 
     const Increase = () => {
         setCount(prevCount => prevCount + 1);
@@ -19,6 +16,7 @@ const Counter = () => {
             <div>
                 <button onClick={Increase}>Increase</button>
                 <button onClick={Decrease}>Decrease</button>
+                <p>{count}</p>
             </div>
         </div>
     )
