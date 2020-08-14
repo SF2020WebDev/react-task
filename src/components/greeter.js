@@ -1,17 +1,29 @@
 import React from 'react'
 
-let name = window.prompt("Enter your name");
+const Name = () => {
+    return (
+        <div>
+            <p>
+            What's your name?
+            <form onsubmit="()">
+                <input type="text" id="input" placeholder="Enter text"/>
+                <button onclick="function" type="button" id="submitbutton" value="submit">Submit</button>
+            </form> 
+            </p>
+        </div>
+    )
+}
 
 const Greeter = () => {
     return (
         <div>
             <p>
-                Hello 
-                <alert> {name}, </alert>
-                 good to see you!
+                <Name />
+                Hello {document.getElementById("Name")} , good to see you!
             </p>
         </div>
     )
 }
+
 
 export default Greeter
