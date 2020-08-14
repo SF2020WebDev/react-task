@@ -1,28 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const Counter = (props) => {
-    constructor (props) {
-        this.setState = {(
-            count: 0
-        )};
-
-    increase() {
-        this.setState = {(
-            count: this.state.count + 1
-        )};
-
-    decrease() {
-        this.setState = {(
-            count: this.state.count -1
-        )};
-    }
-
-    
+const Counter = () => {
+    const {count, setCount} = useState(0);
 
     return (
-        <div>
-            <button className='increase' onClick={(e) => this.increase(e)}> Increase </button>
-            <button className='decrease' onClick={(e) => this.decrease(e)}> Decrease </button>
+        <div className="Counter">
+            <div>
+                <button onClick={() => setCount(count + 1)}>Increase</button>
+            </div>
         </div>
     )
-
+}
