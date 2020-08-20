@@ -1,27 +1,21 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
-const Name = () => {
-    const [firstName, setFirstName] = useState(``);
 
-    const SelectedName = () => {
-        setFirstName(firstName.onsubmit)
-    }
+const Greeter = () => {
+    const [name, setName] = useState("");
+    useEffect(() => {
+        console.log(name)
+    }, [name]
+    )
 
-    const Greeter = () => {
-        return (
-            <div>
-                <p>
-                What's your name?
-                <form onsubmit="()">
-                    <input type="text" id="input" placeholder="Enter text"/>
-                    <button onclick="function" type="button" id="submitbutton" value="submit">Submit</button>
-                </form> 
-                    <Name />
-                    Hello ${SelectedName}, good to see you!
-                </p>
-            </div>
-        )
-    }
+    return (
+        <div onClick={() => setName()}>
+            <p>What's your name?</p>
+            <input value={name} onChange={e => setName(e.target.value)}/>
+            <button>Submit</button>
+            <p>Hello {name}, good to see you!</p>
+        </div>
+    )
 }
 
 export default Greeter
