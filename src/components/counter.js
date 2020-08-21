@@ -5,6 +5,7 @@ const Counter = () => {
 
     const Increase = () => {
         setCount(prevCount => prevCount + 1);
+
     }
 
     const Decrease = () => {
