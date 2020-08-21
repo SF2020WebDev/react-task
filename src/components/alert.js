@@ -3,7 +3,7 @@ import React from 'react'
 const Alert = () => {
     return (
         <div>
-            <p> {alert("This number has been updated.")} </p>
+            <button onClick={() => alert("Hi! Welcome to my app!")}>Click Here!</button> 
         </div>
     )
 }
