@@ -24,7 +24,7 @@ const Form = () => {
                 <p>What's your favourite food?</p>
                 <input value={food} onChange={e => setFood(e.target.value)}/> 
                 
-                <br/> <button onClick={()=>console.log({name},{age},{colour},{food})}>Submit</button>
+                <br/> <button onClick={()=>console.log(name,age,colour,food)}>Submit</button>
 
             </form>
         </div>
