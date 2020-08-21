@@ -5,6 +5,7 @@ import Counter from './components/counter.js'
 import Greeter from './components/greeter.js'
 import Alert from './components/alert.js'
 import Person from './components/person.js'
+import Form from './components/form.js'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Counter />
       <Alert />
       <Person />
+      <Form />
         <a
           className="App-link"
           href="https://reactjs.org"
