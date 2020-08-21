@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
+import Alert from './alert.js'
 
 const Counter = () => {
     const [count, setCount] = useState(0);
 
     const Increase = () => {
         setCount(prevCount => prevCount + 1);
+
     }
 
     const Decrease = () => {
@@ -17,6 +19,7 @@ const Counter = () => {
                 <button onClick={Increase}>Increase</button>
                 <button onClick={Decrease}>Decrease</button>
                 <p>{count}</p>
+                <Alert />
             </div>
         </div>
     )
