@@ -6,6 +6,7 @@ import Greeter from './components/greeter.js'
 import Alert from './components/alert.js'
 import Person from './components/person.js'
 import Form from './components/form.js'
+import Post from './components/post';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Alert />
       <Person />
       <Form />
+      <Post />
         <a
           className="App-link"
           href="https://reactjs.org"
