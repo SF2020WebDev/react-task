@@ -16,7 +16,9 @@ function App() {
       <Alert />
       <Person />
       <Form />
-      <Post />
+      <Post title={'Dover Castle'} 
+            image={<img src="https://www.english-heritage.org.uk/siteassets/home/visit/places-to-visit/dover-castle/old-hero-images/dover-icon-hero-spring.jpg" />}
+            content={"A medieval castle in Dover, Kent, often referred to as the 'Key to England' due to its strategic importance."} />
         <a
           className="App-link"
           href="https://reactjs.org"
