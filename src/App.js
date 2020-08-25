@@ -7,10 +7,12 @@ import Alert from './components/alert.js'
 import Person from './components/person.js'
 import Form from './components/form.js'
 import Post from './components/post';
+import Boxes from './components/boxes';
 
 function App() {
   return (
     <div className="App">
+      <Boxes />
       <Greeter />
       <Counter />
       <Alert />
