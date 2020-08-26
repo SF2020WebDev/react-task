@@ -8,10 +8,12 @@ import Person from './components/person.js'
 import Form from './components/form.js'
 import Post from './components/post';
 import Boxes from './components/boxes';
+import ImagePreview from './components/imagePreview.js'
 
 function App() {
   return (
     <div className="App">
+      <ImagePreview />
       <Boxes />
       <Greeter />
       <Counter />
