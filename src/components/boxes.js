@@ -10,7 +10,8 @@ const Boxes = () => {
                 <br />
                 <br />
                 <br />
-        </div> <script> if(setColor('blue') {"blue"} else {null} </script> <p>{color}</p>
+                {color.length>0 ? <p style={{color:color}}>{color}</p> : null}
+        </div>
 
         <div onClick={() => setColor('red')} className="row" style={{backgroundColor:"red", maxWidth:100, maxHeight:100, marginBottom:50}}>
                 <br />
