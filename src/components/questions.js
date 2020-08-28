@@ -11,7 +11,7 @@ const Questions = () => {
 
     const [answerFive, setAnswerFive] = useState("")
 
-    const [complete, setComplete] = useState("")
+    const [complete, setComplete] = useState(false)
     return (
         <div>
             <p>Do you live in the UK?</p>
@@ -39,7 +39,7 @@ const Questions = () => {
             <input type="radio" id="no" name="five" value={answerFive} onChange={e => setAnswerFive(e.target.value)} /> No
             <p>{answerFive}</p>
             <br />
-            <button onClick={()=>setComplete(answerOne, answerTwo, answerThree, answerFour, answerFive)}> Submit </button>
+            <button onClick={()=>setComplete(true)}> Submit </button>
             
         </div>
     )
