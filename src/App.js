@@ -9,10 +9,12 @@ import Form from './components/form.js'
 import Post from './components/post';
 import Boxes from './components/boxes';
 import ImagePreview from './components/imagePreview.js'
+import Questions from './components/questions';
 
 function App() {
   return (
     <div className="App">
+      <Questions />
       <ImagePreview />
       <Boxes />
       <Greeter />
