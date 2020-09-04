@@ -10,10 +10,12 @@ import Post from './components/post';
 import Boxes from './components/boxes';
 import ImagePreview from './components/imagePreview.js'
 import Questions from './components/questions';
+import Posts from './components/posts.js'
 
 function App() {
   return (
     <div className="App">
+      <Posts />
       <Questions />
       <ImagePreview />
       <Boxes />
