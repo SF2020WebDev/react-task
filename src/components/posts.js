@@ -10,13 +10,15 @@ const devLang = [
             
 
 const Posts = () => {
-    const Numbers = [1, 2, 3, 4, 5]
         return (
             <div>
-                {devLang.map((Numbers) => {return ({[<p>1</p>,<p>2</p>,<p>3</p>,<p>4</p>,<p>5</p>]})})}
+                {devLang.map((devLang) => {return (
+                    <p>{devLang.title} <br /> {devLang.content}. <br /> <img src = {devLang.image} /></p>
+                )})}
             </div>
         )
     }
+
 
 
 export default Posts
