@@ -1,4 +1,6 @@
 import React from 'react'
+import Post from './post.js'
+import ReactDOM from 'react-dom'
 
 const devLang = [
                 {title: "Javascript", content: "Javascript is a scripting language ideal for building websites", image: "https://miro.medium.com/max/720/1*LjR0UrFB2a__5h1DWqzstA.png"}, 
@@ -12,13 +14,16 @@ const devLang = [
 const Posts = () => {
         return (
             <div>
+                <Post id='root' />
                 {devLang.map((devLang) => {return (
                     <p>{devLang.title} <br /> {devLang.content}. <br /> <img src = {devLang.image} /></p>
                 )})}
             </div>
+            
         )
+        
     }
 
-
+ReactDOM.render(Post, document.getElementById('root'))
 
 export default Posts
