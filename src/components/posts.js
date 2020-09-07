@@ -14,9 +14,9 @@ const devLang = [
 const Posts = () => {
         return (
             <div>
-                <Post id='root' />
-                {devLang.map((devLang) => {return (
-                    <p>{devLang.title} <br /> {devLang.content}. <br /> <img src = {devLang.image} /></p>
+                {devLang.map(devLang => {
+                    return (
+                        <Post title={devLang.title} content={devLang.content} image={<img src={devLang.image} />} />
                 )})}
             </div>
             
